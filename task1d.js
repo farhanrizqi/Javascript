@@ -16,16 +16,15 @@ let data = {
 
 const newData = {
   ...data,
-  ...{
-    name: "Farhan",
-    email: "farhanrizqi008@gmail.com",
-    hobby: "listening to music",
-  },
+  name: "Farhan",
+  email: "farhanrizqi008@gmail.com",
+  hobby: "listening to music",
 };
 
 const {
   address: { street, city },
 } = data;
+
 console.log(street, city);
 
 console.log(newData);
