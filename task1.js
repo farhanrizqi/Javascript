@@ -37,7 +37,7 @@ const biodata = {
     },
     {
       skillName: "Microsoft Office",
-      level: "beginner",
+      level: "intermediate",
     },
     {
       skillName: "French",
@@ -50,5 +50,3 @@ const biodata = {
   ],
   interestInCoding: true,
 };
-
-console.log();
