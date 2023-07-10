@@ -1,18 +1,4 @@
 // ! nomor 1
-// concat()
-// menggabungkan array dengan satu array atau lebih
-// let month = ["januari", "maret", "april"];
-// let year = [2019, 2018, [2017.1, 2017.2], 2016];
-// let tryConcat = month.concat(year);
-// console.log(tryConcat);
-
-// pop()
-// mengeluarkan value terakhir pada array
-// let year = [2019, 2018, [2017.1, 2017.2], 2016];
-// console.log(year);
-// let tryPop = year.pop();
-// console.log(tryPop);
-
 // push()
 // memasukkan nilai pada array
 // let month = ["januari", "februari", "maret"];
@@ -30,17 +16,31 @@
 // let tryUnshift = month.unshift("januari");
 // console.log(month);
 
+// concat()
+// menggabungkan array dengan satu array atau lebih
+// let month = ["januari", "maret", "april"];
+// let year = [2019, 2018, [2017.1, 2017.2], 2016];
+// let tryConcat = month.concat(year);
+// console.log(tryConcat);
+
+// pop()
+// mengambil value terakhir pada array
+// let year = [2019, 2018, [2017.1, 2017.2], 2016];
+// console.log(year);
+// let tryPop = year.pop();
+// console.log(tryPop);
+
+// slice()
+// mengestrak array
+// let names = ["larry", "barry", "harry"];
+// console.log(names.slice(0, 2));
+
 // splice()
 // digunakan untuk mengubah, menghapus, menambahkan value kedalam array pada index yang diinginkan
 // month.splice(1, 2);
 // console.log(month);
 // month.splice(1, 0, "februari", "maret");
 // console.log(month);
-
-// slice()
-// mengestrak array
-// let names = ["larry", "barry", "harry"];
-// console.log(names.slice(0, 2));
 
 // find()
 //u ntuk menemukan deretan array sesuai dengan kondisi
@@ -123,5 +123,5 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
   }
 };
 
-const hasil = seleksiNilai(0, 25, [2, 25, 20, 40, 30]);
+const hasil = seleksiNilai(2, 25, [2, 25, 20, 40, 30]);
 console.log(hasil);
