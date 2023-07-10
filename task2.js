@@ -102,20 +102,21 @@
 
 // ! nomor 3
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
-  if (nilaiAwal < nilaiAkhir && dataArray.length >= 5) {
+  if (nilaiAwal < nilaiAkhir) {
     const hasilSeleksi = dataArray.filter(
       (data) => data > nilaiAwal && data < nilaiAkhir
     );
     if (hasilSeleksi.length === 0) {
       return "nilai tidak ditemukan";
     }
+    if (hasilSeleksi.length <= 5) {
+      return "Jumlah angka dalam dataArray harus lebih dari 5";
+    }
     return hasilSeleksi.sort((a, b) => a - b);
   } else if (nilaiAwal > nilaiAkhir) {
     return "nilai akhir harus lebih besar dari nilai awal";
-  } else if (dataArray.length <= 5) {
-    return "nilai harus lebih dari 5";
   }
 };
 
-const hasil = seleksiNilai(2, 15, [16, 25, 29, 24]);
+const hasil = seleksiNilai(2, 17, [2, 25, 4, 1, 30, 18]);
 console.log(hasil);
