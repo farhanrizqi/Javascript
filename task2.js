@@ -42,9 +42,13 @@
 // let names = ["larry", "barry", "harry"];
 // console.log(names.slice(0, 2));
 
-//reverse()
-// untuk merubah urutan value pada array
-// console.log(names.reverse());
+// find()
+//u ntuk menemukan deretan array sesuai dengan kondisi
+// let angka = [1, 4, 5, 15, 30, 9, 56, 5, 4];
+// let tryFind = angka.find((a) => {
+//   return a >= 40;
+// });
+// console.log(tryFind);
 
 //every()
 //melakukan sesuatu pada setiap value pada array
@@ -103,6 +107,9 @@
 // ! nomor 3
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
   if (nilaiAwal < nilaiAkhir) {
+    if (dataArray.length < 5) {
+      return "Jumlah angka dalam dataArray harus lebih dari 5";
+    }
     const hasilSeleksi = dataArray.filter(
       (data) => data > nilaiAwal && data < nilaiAkhir
     );
@@ -113,10 +120,8 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     return hasilSeleksi.sort((a, b) => a - b);
   } else if (nilaiAwal > nilaiAkhir) {
     return "nilai akhir harus lebih besar dari nilai awal";
-  } else if (dataArray.length <= 5) {
-    return "Jumlah angka dalam dataArray harus lebih dari 5";
   }
 };
 
-const hasil = seleksiNilai(2, 17, [2, 25, 4, 1, 30, 18]);
+const hasil = seleksiNilai(0, 25, [2, 25, 20, 40, 30]);
 console.log(hasil);
