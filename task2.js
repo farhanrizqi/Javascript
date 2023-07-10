@@ -109,12 +109,12 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
     if (hasilSeleksi.length === 0) {
       return "nilai tidak ditemukan";
     }
-    if (hasilSeleksi.length <= 5) {
-      return "Jumlah angka dalam dataArray harus lebih dari 5";
-    }
+
     return hasilSeleksi.sort((a, b) => a - b);
   } else if (nilaiAwal > nilaiAkhir) {
     return "nilai akhir harus lebih besar dari nilai awal";
+  } else if (dataArray.length <= 5) {
+    return "Jumlah angka dalam dataArray harus lebih dari 5";
   }
 };
 
