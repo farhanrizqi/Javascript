@@ -1,20 +1,20 @@
 // ! nomor 1
 // push()
 // memasukkan nilai pada array
-// let month = ["januari", "februari", "maret"];
-// console.log(month);
-// let tryPush = month.push("april");
-// console.log(month);
+let month = ["januari", "februari", "maret"];
+console.log(month);
+let tryPush = month.push("april");
+console.log(month);
 
 // shift()
 // menghapus index awal array
-// let tryShift = month.shift();
-// console.log(month);
+let tryShift = month.shift();
+console.log(month);
 
 // unshift()
 // memasukkan value pada index awal array
-// let tryUnshift = month.unshift("januari");
-// console.log(month);
+let tryUnshift = month.unshift("januari");
+console.log(month);
 
 // concat()
 // menggabungkan array dengan satu array atau lebih
@@ -105,9 +105,10 @@
 // searchName("an", 3, hasil);
 
 // ! nomor 3
+
 const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
   if (nilaiAwal < nilaiAkhir) {
-    if (dataArray.length < 5) {
+    if (dataArray.length <= 5) {
       return "Jumlah angka dalam dataArray harus lebih dari 5";
     }
     const hasilSeleksi = dataArray.filter(
