@@ -1,0 +1,17 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "code-implementation/task1.js",
+  "scripts": {
+    "start": "node code-implementation/task1.js",
+    "order": "node code-implementation/task2.js",
+    "sort": "node code-implementation/task3.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "farhan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
