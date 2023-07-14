@@ -11,12 +11,6 @@ const pijarFood = (harga, voucher, jarak, pajak) => {
     diskon = Math.min(0.6 * harga, 25000);
   }
 
-  if (jarak > 2) {
-    deliv = 3000 * (jarak - 2) + 5000;
-  } else {
-    deliv = 5000;
-  }
-
   if (jarak > 2 ? (deliv = 3000 * (jarak - 2) + 5000) : (deliv = 5000))
     if (pajak === true) {
       tax = 0.05 * harga;
